@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #EAEAEA;
+  --bg-card: #FFFFFF;
+  --border-color: #000000;
+  --text-main: #000000;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Force rigid Swiss design - no rounded corners anywhere */
+* {
+  border-radius: 0px !important;
+}
+
+.card {
+  background-color: var(--bg-card) !important;
+  border: 2px solid var(--border-color) !important;
+  padding: 1.5rem !important;
+  box-shadow: none !important;
+  color: #000000 !important;
+}
+
+.bold-heading {
+  font-size: 1.5rem !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: -0.03em !important;
+  color: #000000 !important;
+  border-bottom: 2px solid #000000 !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.swiss-divider {
+  border-top: 2px solid #000000 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.swiss-sublabel {
+  font-size: 0.7rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  color: #555555 !important;
+}
